@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Baloo 2', cursive;
+    line-height: 1.2;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top,#5effc5,#ace0f9);
+}
+
+
+.form-box{
+    width: 100%;
+    max-width: 940px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+}
+.input-grp{
+    background: #fff;
+    padding: 30px;
+    flex-basis: 40%;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    padding-top: 126px;
+}
+
+.vector-side{
+    padding: 30px;
+    flex-basis: 60%;
+    border-radius: 0px 20px 20px 0px;
+    background: url(img/vector.PNG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.input-grp h3{
+    font-size: 25px;
+    color: #3b3b3b;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.input-grp h3 .fa-gift{
+    margin-right: 10px;
+    color: #6823db;
+    font-size: 28px;
+}
+
+.input-grp h2{
+    color: #3b3b3b;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.input-grp small{
+    color: #3b3b3b;
+    font-size: 14px;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+
+form.input-grp label{
+    display: block;
+    width: 100%;
+    color: #3b3b3b;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form.input-grp input{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.submit{
+    background: #6823db;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.forget-link{
+    display: block;
+    color: #6823db;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.singup{
+    width: 40% !important;
+    margin: 0 auto;
+    border: 2px solid #6823db !important;
+    background: transparent !important;
+    border-radius: 8px;
+    color: #3b3b3b;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input-grp{
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-form{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+}
+
+#singUp{
+    left: -600px;
+    transition: all 0.5s;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Login / Sign Up</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="form-box">
+            <form class="input-grp">
+                <div class="inner-form" id="singIn">
+                    <h3><i class="fa-solid fa-gift"></i> Discovery Gift</h3>
+                    <h2>Log in.</h2>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cupiditate
+                        inventore!</small>
+                    <label>
+                        Enter your Email address
+                    </label>
+                    <input type="text" placeholder="example@mall.com" required>
+                    <label>
+                        Enter your password
+                    </label>
+                    <input type="password" placeholder="use 8 characters">
+                    <input type="submit" value="Log in" class="submit">
+                    <div class="rememberMe">
+                    </div>
+                    <a href="#" class="forget-link">Forget password</a>
+                    <input onclick="signup()" type="button" value="sign up now" class="singup">
+                </div>
+
+
+
+                <div class="inner-form"  id="singUp">
+                    <h3><i class="fa-solid fa-gift"></i> Discovery Gift</h3>
+                    <h2>Log in.</h2>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cupiditate
+                        inventore!</small>
+                    <label>
+                        Enter your Email address
+                    </label>
+                    <input type="text" placeholder="example@mall.com" required>
+                    <label>
+                        Enter your password
+                    </label>
+                    <input type="password" placeholder="use 8 characters">
+                    <input type="submit" value="Log in" class="submit">
+                    <a href="#" class="forget-link">Forget password</a>
+                    <input onclick="signin()" type="button" value="sign in" class="singup">
+                </div>
+            </form>
+            <div class="vector-side">
+
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('singIn');
+        var y = document.getElementById('singUp');
+
+        function signup(){
+            y.style.left = "0px";
+            x.style.left = "-600px";
+            
+        }
+        function signin(){
+            x.style.left = "0px";
+            y.style.left = "-600px";
+        }
+
+    </script>
+</body>
+
+</html>
